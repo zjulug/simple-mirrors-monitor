@@ -52,5 +52,5 @@ def check(tick):
     if not is_ok:
         alert.alert(check_dist, result)
 
-    with open(os.path.join("/srv/mirrors/status", check_name + "_status", w)) as output:
+    with open(os.path.join("/srv/mirrors/status", check_name + "_status"), "w") as output:
         output.write(result)
